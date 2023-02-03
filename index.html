@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="index.css"></head>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <header>
+            <h5>Encriptador y Desencriptar de texto</h5>
+        </header>
+        <div id="divPrincipal">
+            <section>
+                <div class="divEfectoFondo" id="divTxtAreaEditable">
+                    <textarea id="txtAreaMensaje" placeholder="Escribe el mensaje que deseas encriptar aqui:" autofocus=""></textarea>
+                </div>
+                <div class="divBtn">
+                    <button class="btnAccion" id="btnEncriptar" onclick="verificarTexto('#divTxtAreaNoEditable', '#divTxtAreaEditable', id)">Encriptar</button>
+                    <button class="btnAccion" id="btnDesencriptar" onclick="verificarTexto('#divTxtAreaNoEditable', '#divTxtAreaEditable', id)">Desencriptar</button>
+                </div>
+            </section>
+            <section>
+                <div class="divEfectoFondo" id="divTxtAreaNoEditable">
+                    <textarea id="txtAreaMensajeEyD" placeholder="El mensaje encriptado o desencriptado aparecera aquí" readonly="true"></textarea>
+                </div>
+                <div class="divBtn">
+                    <button id="btnCopiar" onclick="btnCopiar()">Copiar</button>
+                    <button id="btnBorrar" onclick="borrar('#divTxtAreaEditable', '#divTxtAreaNoEditable')">Borrar</button>
+                </div> 
+            </section>
+        </div>
+    <footer>
+        <div id="pieDePagina">
+            <h6> © 2023 Brandon Pinto</h6>
+            <img style="padding-right: 6%;" src="" class="icon">
+            <img style="padding-right: 6%;" src="" class="icon">
+        </div>
+    </footer>
+        <script>
+            apagarSegundoFondo();
+        </script>
+    </body>  
+    </html>
