@@ -37,7 +37,7 @@ function desencriptador(mensaje){
         pruebaVocal = char+mensaje[i+1];
         if(pruebaVocal == 'ai'){
           msjdesencriptado += 'a';
-          if(i+2 < mensaje.length){
+          if(i+2 <= mensaje.length){
             i = i + 1;
           }else{
             i = mensaje.length-2;
@@ -50,7 +50,7 @@ function desencriptador(mensaje){
         pruebaVocal = char+mensaje[i+1]+mensaje[i+2]+mensaje[i+3]+mensaje[i+4];
         if(pruebaVocal == 'enter'){
           msjdesencriptado += 'e';
-          if(i+5 < mensaje.length){
+          if(i+5 <= mensaje.length){
             i = i + 4;
           }else{
             i = mensaje.length-2;
@@ -64,7 +64,7 @@ function desencriptador(mensaje){
         pruebaVocal = char+mensaje[i+1]+mensaje[i+2]+mensaje[i+3];
         if(pruebaVocal == 'imes'){
           msjdesencriptado += 'i';
-          if(i+4 < mensaje.length){
+          if(i+4 <= mensaje.length){
             i = i + 3;
           }else{
             i = mensaje.length-2;
@@ -78,7 +78,7 @@ function desencriptador(mensaje){
         pruebaVocal = char+mensaje[i+1]+mensaje[i+2]+mensaje[i+3];
         if(pruebaVocal == 'ober'){
           msjdesencriptado += 'o';
-          if(i+4 < mensaje.length){
+          if(i+4 <= mensaje.length){
             i = i + 3;
           }else{
             i = mensaje.length-2;
@@ -92,7 +92,7 @@ function desencriptador(mensaje){
         pruebaVocal = char+mensaje[i+1]+mensaje[i+2]+mensaje[i+3];
         if(pruebaVocal == 'ufat'){
           msjdesencriptado += 'u';
-          if(i+4 < mensaje.length){
+          if(i+4 <= mensaje.length){
             i = i + 3;
           }else{
             i = mensaje.length-2;
